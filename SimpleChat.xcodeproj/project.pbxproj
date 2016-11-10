@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		4F01003B9B57E7D992E19934 /* Pods_SimpleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AFAFAABB03E1D75F2DAD408 /* Pods_SimpleChat.framework */; };
 		9C12B6721DD4E9A300E8C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B6711DD4E9A300E8C7FB /* AppDelegate.swift */; };
-		9C12B6741DD4E9A300E8C7FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B6731DD4E9A300E8C7FB /* ViewController.swift */; };
+		9C12B6741DD4E9A300E8C7FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B6731DD4E9A300E8C7FB /* LoginViewController.swift */; };
 		9C12B6771DD4E9A300E8C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12B6751DD4E9A300E8C7FB /* Main.storyboard */; };
 		9C12B67A1DD4E9A300E8C7FB /* SimpleChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B6781DD4E9A300E8C7FB /* SimpleChat.xcdatamodeld */; };
 		9C12B67C1DD4E9A300E8C7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C12B67B1DD4E9A300E8C7FB /* Assets.xcassets */; };
 		9C12B67F1DD4E9A300E8C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C12B67D1DD4E9A300E8C7FB /* LaunchScreen.storyboard */; };
+		9C12B6871DD4F21600E8C7FB /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B6861DD4F21600E8C7FB /* ChatService.swift */; };
+		9C12B68B1DD4FDE000E8C7FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B68A1DD4FDE000E8C7FB /* Constants.swift */; };
+		9C12B68D1DD5011800E8C7FB /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B68C1DD5011800E8C7FB /* AlertHelper.swift */; };
+		9C12B6921DD50EEA00E8C7FB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C12B6911DD50EEA00E8C7FB /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +26,17 @@
 		7AFAFAABB03E1D75F2DAD408 /* Pods_SimpleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C12B66E1DD4E9A300E8C7FB /* SimpleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C12B6711DD4E9A300E8C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C12B6731DD4E9A300E8C7FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C12B6731DD4E9A300E8C7FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9C12B6761DD4E9A300E8C7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C12B6791DD4E9A300E8C7FB /* SimpleChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleChat.xcdatamodel; sourceTree = "<group>"; };
 		9C12B67B1DD4E9A300E8C7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C12B67E1DD4E9A300E8C7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C12B6801DD4E9A300E8C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C12B6861DD4F21600E8C7FB /* ChatService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		9C12B6891DD4F27D00E8C7FB /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		9C12B68A1DD4FDE000E8C7FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9C12B68C1DD5011800E8C7FB /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		9C12B6911DD50EEA00E8C7FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +80,52 @@
 		9C12B6701DD4E9A300E8C7FB /* SimpleChat */ = {
 			isa = PBXGroup;
 			children = (
+				9C12B6901DD50ECE00E8C7FB /* Models */,
+				9C12B68F1DD50EC000E8C7FB /* Views */,
+				9C12B68E1DD50EB200E8C7FB /* Controllers */,
+				9C12B6881DD4F23400E8C7FB /* Support Files */,
 				9C12B6711DD4E9A300E8C7FB /* AppDelegate.swift */,
-				9C12B6731DD4E9A300E8C7FB /* ViewController.swift */,
 				9C12B6751DD4E9A300E8C7FB /* Main.storyboard */,
 				9C12B67B1DD4E9A300E8C7FB /* Assets.xcassets */,
 				9C12B67D1DD4E9A300E8C7FB /* LaunchScreen.storyboard */,
 				9C12B6801DD4E9A300E8C7FB /* Info.plist */,
 				9C12B6781DD4E9A300E8C7FB /* SimpleChat.xcdatamodeld */,
+				9C12B6891DD4F27D00E8C7FB /* Bridging-Header.h */,
 			);
 			path = SimpleChat;
+			sourceTree = "<group>";
+		};
+		9C12B6881DD4F23400E8C7FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C12B6861DD4F21600E8C7FB /* ChatService.swift */,
+				9C12B68A1DD4FDE000E8C7FB /* Constants.swift */,
+				9C12B68C1DD5011800E8C7FB /* AlertHelper.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		9C12B68E1DD50EB200E8C7FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C12B6731DD4E9A300E8C7FB /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C12B68F1DD50EC000E8C7FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9C12B6901DD50ECE00E8C7FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C12B6911DD50EEA00E8C7FB /* Message.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		E0CFD0601321445A3B64732D /* Pods */ = {
@@ -215,9 +261,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C12B6741DD4E9A300E8C7FB /* ViewController.swift in Sources */,
+				9C12B68D1DD5011800E8C7FB /* AlertHelper.swift in Sources */,
+				9C12B68B1DD4FDE000E8C7FB /* Constants.swift in Sources */,
+				9C12B6871DD4F21600E8C7FB /* ChatService.swift in Sources */,
+				9C12B6741DD4E9A300E8C7FB /* LoginViewController.swift in Sources */,
 				9C12B67A1DD4E9A300E8C7FB /* SimpleChat.xcdatamodeld in Sources */,
 				9C12B6721DD4E9A300E8C7FB /* AppDelegate.swift in Sources */,
+				9C12B6921DD50EEA00E8C7FB /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
