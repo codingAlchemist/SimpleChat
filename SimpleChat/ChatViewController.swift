@@ -59,12 +59,11 @@ class ChatViewController: UIViewController,
     @IBAction func SendMessage(_ sender: Any) {
         self.currentChannel?.sendUserMessage(self.EnterMessageTextField.text, completionHandler: { (message, error) in
             if(error != nil){
-                print("Error sending message \(error)")
                 return
             }else{
                 self.messages.append(message!)
                 self.ChatTable.reloadData()
-                print("message count :\(self.messages.count)")
+                self.scrollToBottom()
             }
             
             
@@ -82,8 +81,7 @@ class ChatViewController: UIViewController,
         
         self.messages.append(messageRecieved)
         self.ChatTable.reloadData()
-        
-        print("message count :\(self.messages.count)")
+        self.scrollToBottom()
     }
     
     

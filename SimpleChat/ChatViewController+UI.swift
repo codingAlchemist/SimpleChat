@@ -25,4 +25,9 @@ extension ChatViewController{
         cell?.SetMessage(messageIn: self.messages[indexPath.row])
         return cell!
     }
+    
+    func scrollToBottom() -> Void {
+        let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+        self.ChatTable.scrollToRow(at: indexPath, at: .bottom, animated: true)
+    }
 }
