@@ -46,11 +46,9 @@ class LoginViewController: UIViewController, AlertHelperDelegate{
     
     func keyboardWillShow(notification: NSNotification) {
         
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0{
-                self.view.frame.origin.y = -keyboardSize.height
-                self.view.layoutIfNeeded()
-            }
+        if self.view.frame.origin.y == 0{
+            self.view.frame.origin.y = -140
+            self.view.layoutIfNeeded()
         }
     }
     

@@ -15,7 +15,7 @@ class DateHelper{
     
     public static func getStringFromDate(dateIn: Date) ->String{
         let dateFormat = DateFormatter()
-        dateFormat.dateFormat = "ddd - hh:m:s"
+        dateFormat.dateFormat = "DDD - hh:m:s"
         return dateFormat.string(from: dateIn)
     }
 }
